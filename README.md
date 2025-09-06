@@ -10,8 +10,6 @@ These exercises are designed to teach learners how to use NumPy to store results
 # 1. Normalization Problem
 Normalization is a crucial step in data processing as it allows for comparing different values, simplifying the analysis process. When a dataset contains extremely large or small quantities, analysis becomes more challenging. To address this issue, normalization involves adjusting the data so that the average (mean) becomes zero and then scaling it such that the standard deviation (or range of values) equals one. To illustrate this process, you can create a random 5x5 dataset, compute its mean and standard deviation, and then normalize it. Maintaining a consistent scale throughout this procedure prepares the data for more effective analysis.
 
-	#Normalization Problem
-
 	import numpy as np
  
 
@@ -56,8 +54,6 @@ Normalization is a crucial step in data processing as it allows for comparing di
 # 2. Divisible by 3 Problem
 
 The squares of the first 100 positive integers are organized into a 10×10 matrix for this task. The goal is to identify the square numbers that are divisible by three. The program's key step is using the modulo operation to separate integers that can be evenly divided by three from those that cannot. Finally, the selected values are saved to a file. This technique illustrates filtering and arranging data using NumPy according to specific requirements.
-
-	#Divisible by 3 Problem
 
 	import numpy as np
  
