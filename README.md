@@ -10,37 +10,39 @@ These exercises are designed to teach learners how to use NumPy to store results
 # 1. Normalization Problem
 Normalization is a crucial step in data processing as it allows for comparing different values, simplifying the analysis process. When a dataset contains extremely large or small quantities, analysis becomes more challenging. To address this issue, normalization involves adjusting the data so that the average (mean) becomes zero and then scaling it such that the standard deviation (or range of values) equals one. To illustrate this process, you can create a random 5x5 dataset, compute its mean and standard deviation, and then normalize it. Maintaining a consistent scale throughout this procedure prepares the data for more effective analysis.
 
+Import numpy
+
 	import numpy as np
  
 
-	# Create a random 5x5 array (values between 0 and 1)
+Create a random 5x5 array (values between 0 and 1)
  
 	X = np.random.random((5, 5))
  
 
-	# Find the mean (average) of all elements in X
+Find the mean (average) of all elements in X
  
 	mean_X = X.mean()
  
 
-	# Find the standard deviation (how spread out the values are)
+Find the standard deviation (how spread out the values are)
  
 	standard_dev_X = X.std()
  
 
-	# Apply the normalization formula
-	# Z = (X - mean) / standard deviation
-	# This makes the new data have mean ~0 and std ~1
+Apply the normalization formula
+Z = (X - mean) / standard deviation
+This makes the new data have mean ~0 and std ~1
  
 	Z = (X - mean_X) / standard_dev_X
  
 
-	# Save the normalized array
+Save the normalized array
  
 	np.save("X_normalized.npy", Z)
  
 
-	# Print results
+Print results
  
 	print("Original X: \n", X)                # show the random 5x5 array
  
@@ -58,31 +60,31 @@ The squares of the first 100 positive integers are organized into a 10×10 matri
 	import numpy as np
  
 
-	# Create an array of integers from 1 to 100
+Create an array of integers from 1 to 100
  
 	numbers = np.arange(1, 101)  
  
 
-	# Square each integer in the array
+Square each integer in the array
  
 	squares = numbers**2  
  
 
-	# Reshape the squared values into a 10x10 matrix
+Reshape the squared values into a 10x10 matrix
  
 	A = squares.reshape(10, 10)  
  
 
-	# Select only the squared numbers that are multiples of 3
+Select only the squared numbers that are multiples of 3
  
 	div_by_3 = squares[squares % 3 == 0]  
  
 
-	# Save the divisible-by-3 results into a .npy file
+Save the divisible-by-3 results into a .npy file
  
 	np.save("div_by_3.npy", div_by_3)  
  
 
-	# Display the numbers divisible by 3
+Display the numbers divisible by 3
  
 	print(div_by_3)  
