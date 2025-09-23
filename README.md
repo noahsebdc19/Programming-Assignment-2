@@ -2,8 +2,7 @@
 
 This exercise illustrates how to utilize the NumPy module in Python to address two problems that highlight its fundamental features. The exercises are designed to be straightforward, allowing learners to grasp the concepts with confidence. 
 
-The first problem focuses on normalization, a crucial preprocessing step in data analytics. Normalization is important as it helps to bring all the features to a similar scale, which is a common requirement for many machine learning algorithms. It involves creating a random 5x5 array and adjusting its values to center around zero, followed by scaling them according to their spread. 
-The second problem entails finding values divisible by three. This involves constructing a 10x10 array using the squares of the first 100 integers. 
+The first problem focuses on normalization, a crucial preprocessing step in data analytics. Normalization is important as it helps to bring all the features to a similar scale, which is a common requirement for many machine learning algorithms. It involves creating a random 5x5 array and adjusting its values to center around zero, followed by scaling them according to their spread. The second problem entails finding values divisible by three. This involves constructing a 10x10 array using the squares of the first 100 integers. 
 
 These exercises are designed to teach learners how to use NumPy to store results, perform mathematical operations, and create arrays. These are not just skills, but essential tools for effectively managing and analyzing data, making the learning process more motivating and rewarding.
 
@@ -56,6 +55,8 @@ Print results
 # 2. Divisible by 3 Problem
 
 The squares of the first 100 positive integers are organized into a 10×10 matrix for this task. The goal is to identify the square numbers that are divisible by three. The program's key step is using the modulo operation to separate integers that can be evenly divided by three from those that cannot. Finally, the selected values are saved to a file. This technique illustrates filtering and arranging data using NumPy according to specific requirements.
+
+Import numpy library
 
 	import numpy as np
  
